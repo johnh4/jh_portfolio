@@ -6,4 +6,8 @@
 		<li><%= link_to 'contact', "#" %></li>
 	</ul>
 </div>
-<p>Find me in app/views/home/main.html.erb</p>
+
+<div id="projects-cont" class="projects">
+	<%= render partial: 'project', collection: @projects %>
+
+</div>
