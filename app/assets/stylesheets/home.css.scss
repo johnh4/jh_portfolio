@@ -2,8 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+	background: url('bg_gradient.jpg');
+}
+
 img, .twit-pic {
 	width: 400px;
 	height: auto;
 	//display: none;
+}
+
+#free-container, .etched {
+	text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+	border-top: 1px solid rgba(255,255,255,.15);
+}
+
+#navbar {
+	border-bottom: 1px solid rgba(0,0,0,.09);
 }

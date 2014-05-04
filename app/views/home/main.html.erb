@@ -1,4 +1,4 @@
-<h1>Home#main</h1>
+<h1 class="etched">Home#main</h1>
 <div id="navbar">
 	<ul>
 		<li><%= link_to 'work', "#" %></li>
@@ -6,8 +6,8 @@
 		<li><%= link_to 'contact', "#" %></li>
 	</ul>
 </div>
-
-<div id="projects-cont" class="projects">
-	<%= render partial: 'project', collection: @projects %>
-
+<div id="free-container">
+	<div id="projects-cont" class="projects">
+		<%= render partial: 'project', collection: @projects %>
+	</div>
 </div>
