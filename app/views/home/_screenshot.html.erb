@@ -1,1 +1,3 @@
-<%= image_tag screenshot.filename, alt: screenshot.filename, class: 'twit-pic' %>
+<% if screenshot.id == 4 %>
+	<%= image_tag screenshot.filename, alt: screenshot.filename, class: 'twit-pic' %>
+<% end %>

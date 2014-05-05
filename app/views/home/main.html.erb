@@ -1,13 +1,26 @@
-<h1 class="etched">Home#main</h1>
-<div id="navbar">
-	<ul>
-		<li><%= link_to 'work', "#" %></li>
-		<li><%= link_to 'about', "#" %></li>
-		<li><%= link_to 'contact', "#" %></li>
-	</ul>
-</div>
-<div id="free-container">
-	<div id="projects-cont" class="projects">
-		<%= render partial: 'project', collection: @projects %>
+
+<div class="row">
+	<div class="large-7 columns">
+		<div id="free-container">
+			<div id="i-am">
+				<span id="i-am-a">I am a</span><br>
+				<span class="dev">WEB DEVELOPER</span>
+			</div>
+			<div id="i-do">
+				<span>and I make web apps like these</span>
+				<span id="arrow">&#8594</span>
+			</div>
+			<div id="with">
+				WITH
+			</div>
+			<div id="skills">
+				<span>Ruby on Rails</span>
+			</div>
+		</div>
+	</div>
+	<div class="large-5 columns">
+		<div id="projects-cont" class="projects">
+			<%= render partial: 'project', collection: @projects %>
+		</div>
 	</div>
 </div>

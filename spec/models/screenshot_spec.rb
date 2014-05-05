@@ -11,6 +11,8 @@ describe Screenshot do
 	it { should belong_to :project }
 	its(:project) { should == project }
 
+	it { should validate_presence_of :filename }
+
 	describe "adding a file" do
 		before { screenshot.update(filename: 'new_file') }
 		its(:filename) { should eq('new_file') }
