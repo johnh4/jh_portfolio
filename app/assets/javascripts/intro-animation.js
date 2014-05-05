@@ -26,6 +26,27 @@ $(function(){
 		opacity: 1,
 		top: "-=5000"
 	}, 4000);
+
+	delayAnimation(4000, function(){
+		$('#skills').fadeIn();
+	});
+
+	// delayAnimation(6000, function(){
+	// 	$('#down-arrow').fadeIn();
+	// 	window.setInterval(function(){
+	// 		$('#down-arrow').fadeOut(3000, function(){
+	// 			$('#down-arrow').fadeIn(3000);
+	// 		});
+	// 	}, 6000);
+	// });
+
+	delayAnimation(6500, function(){
+		//$('#navbar a').css('color', 'white');
+		$('#navrow').animate({
+			opacity: 1
+		}, 3000);
+		//$('#navbar').fadeIn("slow");
+	});
 	
 	function delayAnimation(delay, animateFunction){
 		window.setTimeout(function(){
