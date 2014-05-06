@@ -6,11 +6,10 @@
 
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
-    <%= stylesheet_link_tag    "application","http://fonts.googleapis.com/css?family=Open+Sans:400,300" %>
+    <%= stylesheet_link_tag    "application","http://fonts.googleapis.com/css?family=Open+Sans:400,300", 'http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700','http://fonts.googleapis.com/css?family=Montserrat:400,700' %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
   </head>
-
   <body>
 
     <%= yield %>

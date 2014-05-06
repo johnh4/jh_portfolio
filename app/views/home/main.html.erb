@@ -20,7 +20,7 @@
 		</div>
 		<div class="large-5 columns">
 			<div id="projects-cont" class="projects">
-				<%= render partial: 'project', collection: @projects %>
+				<%= image_tag @projects.first.screenshots.first.filename, class: 'twit-pic' %>
 			</div>
 		</div>
 	</div>
