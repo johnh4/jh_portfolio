@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'home/main'
-
+  post 'contact', to: "home#contact"
   root "home#main"
 
   # The priority is based upon order of creation: first created -> highest priority.

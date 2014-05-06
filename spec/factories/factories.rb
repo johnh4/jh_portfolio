@@ -7,5 +7,12 @@ FactoryGirl.define do
 
 	factory :screenshot do
 		sequence(:filename) { |n| "Filename #{n}" }
+		project
+	end
+
+	factory :contact_form do
+		subject		"Nice Portfolio!"
+		email			"employer@example.com"
+		message		"I like what I see, hit me back."			
 	end
 end
