@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default from: "jehowl4@gmail.com"
+  default to: "jehowl4@gmail.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -9,6 +9,6 @@ class ContactMailer < ActionMailer::Base
   def contact_me(contact_form)
     @from = contact_form.email
     @message = contact_form.message
-    mail to: contact_form.email, subject: contact_form.subject
+    mail from: contact_form.email,subject: "Portfolio: #{contact_form.subject}"
   end
 end

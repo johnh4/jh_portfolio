@@ -36,8 +36,8 @@ describe "Home page" do
 				ActionMailer::Base.deliveries.count.should == 1
 			end
 
-			it "should have the correct recipient" do
-				ActionMailer::Base.deliveries.first.to[0].should == "john@example.com"
+			it "should have the correct sender" do
+				ActionMailer::Base.deliveries.first.from[0].should == "john@example.com"
 			end
 
 			it "should have the correct message" do
@@ -45,7 +45,8 @@ describe "Home page" do
 			end
 
 			it "should have the correct subject" do
-				ActionMailer::Base.deliveries.first.subject.should == "Hey!"
+				ActionMailer::Base.deliveries.first.subject.should match "Hey!"
+				ActionMailer::Base.deliveries.first.subject.should match "Portfolio:"
 			end
 		end
 

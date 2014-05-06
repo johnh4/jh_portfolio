@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'foundation-rails', '~>5.2.2.0'
+gem 'figaro', '~> 0.7.0'
 
 group :development, :test do
 	gem 'guard-rspec', '~>4.2.8'
