@@ -321,13 +321,29 @@ img, .twit-pic {
 	background: rgb(62,95,194);
 	//background: black;
 	color: white;
+	#skills-header {
+		display: inline-block;
+		float: left;
+		margin-top: 20px;
+		font-size: 60px;
+		font-family: 'Montserrat', sans-serif;
+		//box-shadow: 0px 0px 2px #fff;
+		//padding: 0px 5px;
+		//color: black;
+		//background: white;
+		color: white;
+		text-shadow: 0px -1px 1px #000;
+		text-shadow: -1px 0px 1px #000;
+		text-transform: uppercase;
+		display: none;
+	}
 	.skills {
 		h1 {
 			font-size: 60px;
 		}
 		list-style: none;
 		li {
-			text-align: center;
+			//text-align: center;
 			float: right;
 			display: inline-block;
 			margin: 10px 20px;
