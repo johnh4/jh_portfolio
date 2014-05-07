@@ -7,11 +7,12 @@
 			<div id="contact-icons">
 				<%= link_to "","http://www.linkedin.com/in/johnhowlett4", 
 						class: "fi fi-social-linkedin" %>
-				<%= link_to "","http://www.github.com/johnh4", class: "fi fi-social-github" %>
+				<%= link_to "","http://www.github.com/johnh4", class: "fi fi-social-github",
+						id:"center-icon" %>
 				<%= link_to "","mailto:jehowl4@gmail.com", class: "fi fi-mail" %>
 			</div>
-			<p>If you'd like to get in touch, feel free to use either the form to the right or one
-				of the methods above.</p>
+			<!--<p>If you'd like to get in touch, feel free to use either the form to the right or one
+				of the methods above.</p>-->
 		</div>
 		<div class="large-5 columns">
 			<%= form_for(@contact_form, url: contact_path) do |f| %>
