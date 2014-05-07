@@ -23,7 +23,6 @@ $(document).ready(function(){
 		}, 1000);	
 	}, 5000);
 	
-	
 	function fader(el, replacement){
 		//$('#down-arrow').fadeOut();
 		el.fadeOut(function(){
@@ -37,7 +36,22 @@ $(document).ready(function(){
 			"text": replacement
 		});
 	}
-	$('#navbar').on('click', 'a', function(){
+	$('#navbar').on('click', 'a', function(e){
+		e.preventDefault();
 		clearInterval(skillInt);
+		// var txt = $(this).text();
+		// console.log('txt',txt);
+		// $(this).shuffleLetters({
+		// 	"text": txt
+		// });
+	});
+	$('#my-name').hover(function(e){
+		console.log('hovering over name');
+		var txt = $(this).text();
+		console.log('txt',txt);
+		$(this).shuffleLetters({
+			"text": txt
+		});
+	}, function(e){
 	});
 });

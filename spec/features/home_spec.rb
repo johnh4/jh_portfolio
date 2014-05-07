@@ -26,11 +26,12 @@ describe "Home page" do
 		context "with valid attributes" do
 			before do
 				visit root_path
-				fill_in "Email",			with: "john@example.com"
-				fill_in "Subject",		with: "Hey!"
-				fill_in "Message",		with: "Let's get together for some coffee."
+				fill_in "contact_form_email",			with: "john@example.com"
+				fill_in "contact_form_name",		with: "Herbert Hightower"
+				fill_in "contact_form_message",		with: "Let's get together for some coffee."
 				click_button "Send"
 			end
+			after { ActionMailer::Base.deliveries.clear }
 
 			it "should send an email" do
 				ActionMailer::Base.deliveries.count.should == 1
@@ -44,9 +45,28 @@ describe "Home page" do
 				ActionMailer::Base.deliveries.first.body.encoded.should match("get together")
 			end
 
+			it "should have the correct name" do
+				ActionMailer::Base.deliveries.first.body.encoded.should match "Herbert Hightower"
+			end
+		end
+
+		context "without a sender name" do
+			before do
+				visit root_path
+				fill_in "contact_form_email",			with: "john@example.com"
+				fill_in "contact_form_name",		with: ""
+				fill_in "contact_form_message",		with: "Let's get together for some coffee."
+				click_button "Send"
+			end
+
+			after { ActionMailer::Base.deliveries.clear }
+
+			it "should send an email" do
+				ActionMailer::Base.deliveries.count.should == 1
+			end
+
 			it "should have the correct subject" do
-				ActionMailer::Base.deliveries.first.subject.should match "Hey!"
-				ActionMailer::Base.deliveries.first.subject.should match "Portfolio:"
+				ActionMailer::Base.deliveries.first.subject.should match "unnamed visitor"
 			end
 		end
 

@@ -11,7 +11,7 @@ FactoryGirl.define do
 	end
 
 	factory :contact_form do
-		subject		"Nice Portfolio!"
+		name			"Employ Er"
 		email			"employer@example.com"
 		message		"I like what I see, hit me back."			
 	end

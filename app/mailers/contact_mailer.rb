@@ -9,6 +9,12 @@ class ContactMailer < ActionMailer::Base
   def contact_me(contact_form)
     @from = contact_form.email
     @message = contact_form.message
-    mail from: contact_form.email,subject: "Portfolio: #{contact_form.subject}"
+    @name = contact_form.name
+    if contact_form.name.presence
+      subject = "Portfolio: A message from #{contact_form.name}" 
+    else
+      subject = "Portfolio: A message from an unnamed visitor to your site."
+    end
+    mail from: contact_form.email,subject: subject
   end
 end

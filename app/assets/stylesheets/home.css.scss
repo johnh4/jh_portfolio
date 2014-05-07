@@ -1,3 +1,5 @@
+@import 'foundation-icons';
+
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
@@ -94,9 +96,9 @@ img, .twit-pic {
 	}
 }
 
-#my-name{
-	//font-size: 22px;
-	//color: white;
+#name-col {
+	min-width: 200px;
+	min-height: 20px;
 	text-transform: uppercase;
 	//font-size: 17px;
 }
@@ -351,8 +353,100 @@ img, .twit-pic {
 }
 
 /***************** CONTACT *******************/
-
+$inverting: rgb(62,95,194);
+$purp: #8000FF;
+$inverting: red;
+$inverting-b: white;
+$navy: rgb(62,95,194);
+$teal: rgb(0,140,186);
+$babyblue: #C7ECFF;
 #contact {
 	width: 100%;
 	background: rgb(245,245,245);
+	background: white;
+	background: orangered;
+	background: #FFC2C9;
+	background: black;
+	background: $babyblue;
+	background: white;
+	//background: url('http://traditores.org/wp-content/uploads/2011/01/envelope_light_blue.jpg') no-repeat center;
+	//background-size: contain;
+	color: black;
+	.contact-left {
+		background: red;
+		box-shadow: 0px 0px 2px black;
+		height: 100%;
+	}
+	h1 {
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+		font-style: italic;
+		font-size: 70px;
+		//color: $inverting-b;
+		text-transform: lowercase;
+		//background: $inverting;
+		margin-bottom: 0px;
+		color: $purp;
+		color: white;
+	}
+	p {
+		font-weight: bold;
+		color: white;
+	}
+	#contact-icons {
+		//width: 100%;
+		text-align: center;
+		//background: orangered;
+		//background: $inverting-b;
+		margin-top: 17px;
+		margin-bottom: 35px;
+		.fi,i {
+			font-size: 60px;
+			//position: relative;
+			//left: 50%;
+			//right: 50%;
+			//display: inline-block;
+			//margin: auto auto;
+			//text-align: center;
+			color: blue;
+			color: $inverting;
+			color: $babyblue;
+			//color: black;
+			//color: black;
+			//text-shadow: 0px 0px 5px black;	
+		}
+		a {
+			text-align: center;
+		}
+	}
+	.fi,i {
+		font-size: 50px;
+	}
+	input, textarea {
+		opacity: 1;
+		color: rgba(5,5,5,.3);
+		//color: rgba(255,255,255,.4);
+		//box-shadow: 0px 0px 1px #000;
+		border: 1px solid #000;
+		background: orangered;
+		background: gold;
+		background: #FCFFC9;
+		background: white;
+	}
+	#contact-button {
+		padding: 10px 20px;
+		background: black;
+		//text-transform: uppercase;
+		font-weight: bold;
+		color: white;
+		float: right;
+		width: 100%;
+		//box-shadow: 0 0 2px white;
+	}
+	.contact-row {
+		padding-top: 30px;
+	}
+	#contact_form_message {
+		height: 120px;
+	}
 }

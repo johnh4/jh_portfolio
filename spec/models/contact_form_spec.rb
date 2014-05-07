@@ -10,11 +10,11 @@ describe ContactForm do
 				bad_contact.should_not be_valid
 			end		
 		end
-		describe "subject" do
-			let(:bad_contact) { FactoryGirl.build(:contact_form, subject: "") }
+		describe "name" do
+			let(:bad_contact) { FactoryGirl.build(:contact_form, name: "") }
 		
-			it "validates presence of subject" do
-				bad_contact.should_not be_valid
+			it "doesn't validate presence of name" do
+				bad_contact.should be_valid
 			end		
 		end
 		describe "email" do

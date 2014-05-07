@@ -1,15 +1,28 @@
 <div id="contact">
-	<div class="row">
-		<div class="large-12 columns">
+	<div class="row contact-row">
+		<div class="large-7 columns contact-left">
+			<div id="contact-inv">
+				<h1>Contact Me</h1>
+			</div>
+			<div id="contact-icons">
+				<%= link_to "","http://www.linkedin.com/in/johnhowlett4", 
+						class: "fi fi-social-linkedin" %>
+				<%= link_to "","http://www.github.com/johnh4", class: "fi fi-social-github" %>
+				<%= link_to "","mailto:jehowl4@gmail.com", class: "fi fi-mail" %>
+			</div>
+			<p>If you'd like to get in touch, feel free to use either the form to the right or one
+				of the methods above.</p>
+		</div>
+		<div class="large-5 columns">
 			<%= form_for(@contact_form, url: contact_path) do |f| %>
-				<%= f.label :email %>
-				<%= f.text_field :email %>
-				<%= f.label :subject %>
-				<%= f.text_field :subject %>
-				<%= f.label :message %>
-				<%= f.text_area :message %>
-				<%= f.submit "Send", class: "button" %>
+				<%= f.text_field :email, value: "Your Email:" %>
+				<%= f.text_field :name, value: "Your Name:" %>
+				<%= f.text_area :message, value: "Message:" %>
+				<%= f.submit "Send", id: "contact-button", class: "button" %>
 			<% end %>
 		</div>
 	</div>
 </div>
+
+
+
