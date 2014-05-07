@@ -257,21 +257,34 @@ img, .twit-pic {
 	background: rgb(62,95,194);
 	background: rgba(245,245,245,1);
 	color: white;
-	color: black;
-	font-family: 'Josefin Sans', 'Open Sans', sans-serif;
+	p {
+		color: black;
+		font-family: 'Roboto Condensed','Montserrat', sans-serif;
+		font-weight: bold;
+		//box-shadow: 0 0 2px black;
+		//color: rgb(62,95,194);
+	}
 	//font-variant: small-caps;
 	//padding-top: 50px;
 	h3 {
-		font-family: 'Josefin Sans', 'Open Sans', sans-serif;
+		//font-family: 'Roboto Condensed','Josefin Sans', 'Open Sans', sans-serif;
 		text-align: center;
 	}
 	a, h3 {
 		font-family:  'Open Sans', sans-serif;
-		font-family: 'Montserrat', sans-serif;
+		font-family: 'Roboto Condensed','Montserrat', sans-serif;
 		//font-weight: light;
 		color: black;
-		color: rgb(62,95,194);
+		//color: rgb(62,95,194);
 		//text-shadow: 0px 0px 1px #000;
+	}
+	.site-links {
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 8px;
+		a:nth-child(n + 2) {
+			margin-left: 20px;
+		}
 	}
 	.large-print h1 {
 		font-family: 'Montserrat', sans-serif;
@@ -313,6 +326,7 @@ img, .twit-pic {
 	}
 	.work-pic {
 		box-shadow: 0px 0px 3px #000;
+		height: 306px;
 	}
 }
 

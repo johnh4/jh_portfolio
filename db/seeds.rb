@@ -8,9 +8,11 @@
 
 thatsongtho = Project.create!(url: "http://www.thatsongtho.net", 
 														 name: "That Song Tho", 
-														 description: "I built this site with Ruby on Rails and Zurb Foundation. It uses API's by Rdio, Echonest, and Twitter to help users find new favorite songs." )
+														 github: "https://github.com/johnh4/that_song_tho",
+														 description: "I built this site with Ruby on Rails and Zurb Foundation. It uses APIs by Rdio, Echonest, and Twitter to help users find new favorite songs." )
 twee_d = Project.create!(url: "http://twee-d.herokuapp.com",
 												name: "Twee-D",
+												github: "https://github.com/johnh4/node_twitter_wall",
 												description: "I created this site in Node.js / Express, and used Twitter's Streaming API to feed in a constant stream of real-time data.")
 
 ss_1 = thatsongtho.screenshots.create!(filename: "tst.jpg")

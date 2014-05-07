@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140504093237) do
+ActiveRecord::Schema.define(version: 20140507205159) do
 
   create_table "projects", force: true do |t|
     t.string   "url"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20140504093237) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "github"
   end
 
   create_table "screenshots", force: true do |t|

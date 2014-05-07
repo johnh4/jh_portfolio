@@ -5,6 +5,7 @@
 													alt: project.screenshots.first.filename,
 													class: "work-pic" %>
 	</div>
-	<div><%= link_to project.name, project.url %></div>
+	<div class="site-links"><%= link_to "view site", project.url %>
+		<%= link_to "github", project.github %></div>
 	<p><%= project.description %></p>
 </div>
