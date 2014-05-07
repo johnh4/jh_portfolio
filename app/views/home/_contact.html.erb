@@ -14,9 +14,9 @@
 		</div>
 		<div class="large-5 columns">
 			<%= form_for(@contact_form, url: contact_path) do |f| %>
-				<%= f.text_field :email, value: "Your Email:" %>
-				<%= f.text_field :name, value: "Your Name:" %>
-				<%= f.text_area :message, value: "Message:" %>
+				<%= f.text_field :email, placeholder: "Your Email:" %>
+				<%= f.text_field :name, placeholder: "Your Name:" %>
+				<%= f.text_area :message, placeholder: "Message:" %>
 				<%= f.submit "Send", id: "contact-button", class: "button" %>
 			<% end %>
 		</div>

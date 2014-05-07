@@ -39,16 +39,12 @@ $(document).ready(function(){
 	$('#navbar').on('click', 'a', function(e){
 		e.preventDefault();
 		clearInterval(skillInt);
-		// var txt = $(this).text();
-		// console.log('txt',txt);
-		// $(this).shuffleLetters({
-		// 	"text": txt
-		// });
 	});
-	$('#my-name').hover(function(e){
+	$('#my-name a').hover(function(e){
 		console.log('hovering over name');
 		var txt = $(this).text();
 		console.log('txt',txt);
+		var rep = "<%= link_to 'John Howlett', '#intro' %>";
 		$(this).shuffleLetters({
 			"text": txt
 		});
