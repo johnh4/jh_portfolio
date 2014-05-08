@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -32,12 +30,18 @@ gem 'figaro', '~> 0.7.0'
 group :development, :test do
 	gem 'guard-rspec', '~>4.2.8'
 	gem 'rspec-rails', '~>2.14.2'
+	# Use sqlite3 as the database for Active Record
+	gem 'sqlite3'
 end
 
 group :test do
 	gem 'capybara', '~>2.2.1'
 	gem 'shoulda-matchers', '~>2.6.1'
 	gem 'factory_girl_rails', '4.2.0'
+end
+
+group :production do
+	gem 'pg', '~>0.17.1'
 end
 
 # Use ActiveModel has_secure_password
