@@ -26,6 +26,7 @@ gem 'spring',        group: :development
 
 gem 'foundation-rails', '~>5.2.2.0'
 gem 'figaro', '~> 0.7.0'
+gem 'foundation-icons-sass-rails'
 
 group :development, :test do
 	gem 'guard-rspec', '~>4.2.8'
@@ -42,6 +43,7 @@ end
 
 group :production do
 	gem 'pg', '~>0.17.1'
+	gem 'rails_12factor', '0.0.2'
 end
 
 # Use ActiveModel has_secure_password
