@@ -13,7 +13,7 @@ thatsongtho = Project.create!(url: "http://www.thatsongtho.net",
 twee_d = Project.create!(url: "http://twee-d.herokuapp.com",
 												name: "Twee-D",
 												github: "https://github.com/johnh4/node_twitter_wall",
-												description: "I created this site in Node.js / Express, and used Twitter's Streaming API to feed in a constant stream of real-time data.")
+												description: "I created this site in Node.js / Express, and used Twitter's Streaming API to feed in a constant stream of real-time data and display tweets in an unconventional way.)"
 
 ss_1 = thatsongtho.screenshots.create!(filename: "tst.jpg")
 ss_2 = thatsongtho.screenshots.create!(filename: "tst-mobile.jpg")
