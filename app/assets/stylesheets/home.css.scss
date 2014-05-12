@@ -51,6 +51,9 @@ img, .twit-pic {
 	a {
 		color: white;
 	}
+	.small {
+		text-align: center;
+	}
 }
 
 .sticky {
@@ -130,12 +133,13 @@ img, .twit-pic {
 	}
 	.dev {
 		position: relative;
-		background: rgba(20,20,20,.5);
+		@media only screen and (min-width: 640px){
+			background: rgba(20,20,20,.5);
+		}
 		color: cyan;
 		left: -1000px;
 		display: hidden;
 		padding: 0px 5px;
-		//-webkit-animation: web-dev 2s;
 	}
 }
 #i-do {
@@ -200,6 +204,9 @@ img, .twit-pic {
 	position: relative;
 	padding-top: 30px;
 	right: -1200px;
+	@media only screen and (max-width: 640px) {
+		top: 152px;
+	}
 }
 
 .twit-pic {
@@ -328,6 +335,7 @@ img, .twit-pic {
 		box-shadow: 0px 0px 3px #000;
 		height: 306px;
 	}
+
 }
 
 /***************** ABOUT *******************/
@@ -491,5 +499,10 @@ $babyblue: #C7ECFF;
 	}
 	.field_with_errors {
 		box-shadow: 0px 0px 2px red;
+	}
+	@media only screen and (max-width: 640px){
+		#new_contact_form {
+			margin-top: 15px;
+		}
 	}
 }
