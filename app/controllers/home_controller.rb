@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def main
-  	@projects = Project.all
+  	@projects = Project.all.take(2)
   	@contact_form = ContactForm.new
   end
 
