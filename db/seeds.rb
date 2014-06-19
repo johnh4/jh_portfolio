@@ -11,7 +11,7 @@ conmen = Project.create!(url: "http://conmen.herokuapp.com",
 														 github: "https://github.com/johnh4/conmen",
 														 description: "This app uses Ruby on Rails and 
 														 					Angular to provide information on
-																			members on congress. It uses several APIs
+																			members of congress. It uses several APIs
 																			to get up to date, reliable vote and 
 																			fundraising data.")
 twee_d = Project.create!(url: "http://twee-d.herokuapp.com",
