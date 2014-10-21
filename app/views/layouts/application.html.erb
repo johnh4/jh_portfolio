@@ -3,6 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </script>
+
+    <link rel="import" href="components/font-roboto/roboto.html">
+    <link rel="import" href="components/core-header-panel/core-header-panel.html">
+    <link rel="import" href="components/core-toolbar/core-toolbar.html">
+    <link rel="import" href="components/paper-tabs/paper-tabs.html">
 
     <title><%= content_for?(:title) ? yield(:title) : "John Howlett" %></title>
 
@@ -16,4 +22,5 @@
     <%= yield %>
     <%= javascript_include_tag "application" %>
   </body>
+  <%= render :partial => 'ga' %>
 </html>
